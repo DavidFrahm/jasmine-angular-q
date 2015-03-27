@@ -1,0 +1,18 @@
+{
+  "name": "jasming-angular-q",
+  "version": "1.0.0",
+  "homepage": "https://github.com/DavidFrahm/jasming-angular-q",
+  "authors": [
+    "David Frahm <david@midmoapps.com>"
+  ],
+  "description": "Helper functions for dealing with AngularJS promises in Jasmine specs",
+  "main": "jasmine-angular-q.js",
+  "keywords": [
+    "jasmine",
+    "angularjs",
+    "angular",
+    "promise",
+    "q"
+  ],
+  "license": "MIT"
+}

@@ -6,4 +6,4 @@ Helper functions for dealing with AngularJS promises in Jasmine specs
 
 Install using Bower:
 
-    $ bower install jasmine-angular-q
+    $ bower install jasmine-angular-q --save-dev

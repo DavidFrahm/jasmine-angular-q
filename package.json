@@ -1,0 +1,26 @@
+{
+  "name": "jasming-angular-q",
+  "version": "1.0.0",
+  "description": "Helper functions for dealing with AngularJS promises in Jasmine specs",
+  "main": "jasmine-angular-q.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DavidFrahm/jasmine-angular-q"
+  },
+  "keywords": [
+    "jasmine",
+    "angularjs",
+    "angular",
+    "promise",
+    "q"
+  ],
+  "author": "David Frahm  <david@midmoapps.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DavidFrahm/jasmine-angular-q/issues"
+  },
+  "homepage": "https://github.com/DavidFrahm/jasmine-angular-q"
+}

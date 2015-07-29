@@ -7,3 +7,7 @@ Helper functions for dealing with AngularJS promises in Jasmine specs
 Install using NPM:
 
     $ npm install jasmine-angular-q --save-dev
+
+## Usage
+
+TODO: Add example of each matcher here.

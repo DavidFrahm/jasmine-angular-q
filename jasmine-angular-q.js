@@ -23,7 +23,7 @@
  * SOFTWARE.
  */
 
-var jasmineNgQ = {
+var jasmineQ = {
 
     q: null,
 
@@ -34,7 +34,7 @@ var jasmineNgQ = {
     spyOnAndResolve: function(source, target, retval, q) {
        q = q || this.q;
 
-       return spyOn(source, target).andCallFake(function() {
+       return spyOn(source, target).and.callFake(function() {
            var deferred = q.defer();
            deferred.resolve(retval);
            return deferred.promise;
@@ -52,7 +52,7 @@ var jasmineNgQ = {
     },
 
     createPromiseResolvingSpy: function(q, retval) {
-        return jasmine.createSpy().andCallFake(function() {
+        return jasmine.createSpy().and.callFake(function() {
             var deferred = q.defer();
             deferred.resolve(retval);
             return deferred.promise;
@@ -60,7 +60,7 @@ var jasmineNgQ = {
     },
 
     createPromiseRejectingSpy: function(q, retval) {
-        return jasmine.createSpy().andCallFake(function() {
+        return jasmine.createSpy().and.callFake(function() {
             var deferred = q.defer();
             deferred.reject(retval);
             return deferred.promise;
@@ -68,7 +68,7 @@ var jasmineNgQ = {
     },
 
     createResourcePromiseResolvingSpy: function(q, retval) {
-        return jasmine.createSpy().andCallFake(function() {
+        return jasmine.createSpy().and.callFake(function() {
             var deferred = q.defer();
             deferred.resolve(retval);
             return {$promise: deferred.promise};
@@ -76,7 +76,7 @@ var jasmineNgQ = {
     },
 
     createResourcePromiseRejectingSpy: function(q, retval) {
-        return jasmine.createSpy().andCallFake(function() {
+        return jasmine.createSpy().and.callFake(function() {
             var deferred = q.defer();
             deferred.reject(retval);
             return {$promise: deferred.promise};

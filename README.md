@@ -21,3 +21,5 @@ Install using NPM:
     expect(firebaseAuthWithPasswordSpy).toHaveBeenCalled();
     expect(scope.success).toBe(true);
 ```
+
+_TODO: Add example of other matchers here._

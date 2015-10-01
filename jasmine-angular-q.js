@@ -44,7 +44,7 @@ var jasmineQ = {
     spyOnAndReject: function(source, target, retval, q) {
        q = q || this.q;
 
-       return spyOn(source, target).andCallFake(function() {
+       return spyOn(source, target).and.callFake(function() {
            var deferred = q.defer();
            deferred.reject(retval);
            return deferred.promise;

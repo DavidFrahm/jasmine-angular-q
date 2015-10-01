@@ -1,6 +1,6 @@
 {
   "name": "jasmine-angular-q",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Helper functions for dealing with AngularJS promises in Jasmine specs",
   "main": "jasmine-angular-q.js",
   "scripts": {

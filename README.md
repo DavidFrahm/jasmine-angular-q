@@ -1,5 +1,11 @@
 # jasmine-angular-q
 
+**Note: I don't think there's much use for this library anymore, since $q.when() makes the spyOn() a one-liner, like this:**
+
+```
+   spyOn(SomeService, 'someMethod').and.returnValue($q.when({some: "return object"}));
+```
+
 Helper functions for dealing with AngularJS promises in Jasmine specs
 
 ## Install
@@ -13,7 +19,7 @@ Install using NPM:
 ### spyOnAndResolve
 
 ```
-    var firebaseAuthWithPasswordSpy = jasmineQ.spyOnAndResolve(FirebaseService.auth, '$authWithPassword', {some: "return properties"}, $q);
+    var firebaseAuthWithPasswordSpy = jasmineQ.spyOnAndResolve(FirebaseService.auth, '$authWithPassword', {some: "return object"}, $q);
 
     scope.login({some: "user credentials"});
     scope.$digest();
